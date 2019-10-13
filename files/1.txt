@@ -1,0 +1,6 @@
+1. Object type: 'File'
+2. Object type: 'Dir'
+3. Object type: 'Registry Key'
+4. Object type: 'Process'
+5. Object type: 'Printer'
+6. Object type: 'Mutex'

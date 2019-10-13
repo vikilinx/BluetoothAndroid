@@ -1,0 +1,4 @@
+#Sun Oct 13 16:12:30 MSK 2019
+base.0=D\:\\AndroidStudioProjects\\BluetoothAndroid\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex
