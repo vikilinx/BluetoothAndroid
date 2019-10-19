@@ -1,9 +1,12 @@
 package com.bourdi_bay.bluetoothandroid;
 
+import android.annotation.TargetApi;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothServerSocket;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
@@ -13,6 +16,9 @@ import android.widget.AdapterView;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.ArrayAdapter;
+import android.content.IntentFilter;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Set;
@@ -29,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
     private Set<BluetoothDevice> pairedDevices;
 
     private BluetoothSocket mmSocket = null;
+    private BluetoothServerSocket msSocket = null;
     private OutputStream mOutput;
     private InputStream mInput;
+    @TargetApi(Build.VERSION_CODES.ECLAIR)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                                                 }
                                             }
             );
+
 
         } else {
             Toast.makeText(this, "No device paired...", Toast.LENGTH_LONG).show();
@@ -145,12 +154,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private class ConnectThread extends Thread {
 
-
-
-        public ConnectThread(BluetoothDevice device) {
+       public ConnectThread(BluetoothDevice device) {
             // Get a BluetoothSocket to connect with the given BluetoothDevice
             try {
-                mmSocket = device.createRfcommSocketToServiceRecord(MY_UUID);
+                msSocket = mBluetoothAdapter.listenUsingInsecureRfcommWithServiceRecord("hi",MY_UUID);//mBluetoothAdapter.listenUsingRfcommWithServiceRecord("App",MY_UUID);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -159,15 +166,17 @@ public class MainActivity extends AppCompatActivity {
         public void run() {
             // Cancel discovery because it will slow down the connection
             mBluetoothAdapter.cancelDiscovery();
-
+            TextView connect = (TextView)findViewById(R.id.connect);
             try {
                 // Connect the device through the socket. This will block
                 // until it succeeds or throws an exception
-                mmSocket.connect();
+                mmSocket=msSocket.accept();
+                //mmSocket.connect();
             } catch (IOException connectException) {
                 // Unable to connect; close the socket and get out
                 try {
                     mmSocket.close();
+                    connect.setText("Connection. Fail");
                 } catch (IOException closeException) {
                     closeException.printStackTrace();
                 }
@@ -188,11 +197,11 @@ public class MainActivity extends AppCompatActivity {
                 return;
             }
 
-            TextView connect = (TextView)findViewById(R.id.connect);
+
             connect.setText("");
 
             connect.setText("Connection. Success");
-            try {
+            /*try {
                 TextView tfile = (TextView) findViewById(R.id.file);
                 tfile.setText("");
                 byte [] name = new byte[256];
@@ -217,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+            }*/
         }
     }
 }

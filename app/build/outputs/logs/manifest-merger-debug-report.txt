@@ -1,27 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.android.support:design:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\6d6507483564fd5aa1112fa84203ba70\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\a2dcf7858f4b33cf9a4da5de944b6526\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:recyclerview-v7:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\c11943de780a65bbe4c5223c43bb9f9f\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\173f7dde5027f5368fffbf4fb6b43ac0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
-INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:3:5-46
 		INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:2:11-69
@@ -41,8 +41,12 @@ uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:9:5-81
 	android:name
 		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:11:5-27:19
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:12:5-28:19
 MERGED from [com.android.support:design:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\6d6507483564fd5aa1112fa84203ba70\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\6d6507483564fd5aa1112fa84203ba70\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\a2dcf7858f4b33cf9a4da5de944b6526\AndroidManifest.xml:22:5-20
@@ -50,33 +54,33 @@ MERGED from [com.android.support:appcompat-v7:23.1.1] C:\Users\vikag\.gradle\cac
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\173f7dde5027f5368fffbf4fb6b43ac0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.1.1] C:\Users\vikag\.gradle\caches\transforms-2\files-2.1\173f7dde5027f5368fffbf4fb6b43ac0\AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:16:9-40
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.bourdi_bay.bluetoothandroid.MainActivity
-ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:17:9-26:20
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:18:9-27:20
 	android:label
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:19:13-45
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:20:13-45
 	android:theme
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:20:13-56
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:21:13-56
 	android:name
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:18:13-41
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:21:13-25:29
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:22:17-69
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:24:17-77
+ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:24:27-74
+		ADDED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\AndroidStudioProjects\BluetoothAndroid\app\src\main\AndroidManifest.xml
